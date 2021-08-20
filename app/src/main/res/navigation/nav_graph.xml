@@ -17,5 +17,9 @@
         android:id="@+id/addReminderFragment"
         android:name="com.example.meminder.AddReminderFragment"
         android:label="fragment_add_reminder"
-        tools:layout="@layout/fragment_add_reminder" />
+        tools:layout="@layout/fragment_add_reminder" >
+        <action
+            android:id="@+id/action_addReminderFragment_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+    </fragment>
 </navigation>
