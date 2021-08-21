@@ -14,14 +14,14 @@ class ReminderListAdapter(private val onItemClicked: (Reminder) -> Unit)
     private val allData = ArrayList<Reminder>()
 
     inner class ReminderDataVH(itemView: View): RecyclerView.ViewHolder(itemView){
-        val reminderTitle: TextView = itemView.findViewById(R.id.adapter_title)
-        val reminderTime:TextView = itemView.findViewById(R.id.adapter_time)
+        val reminderTitle: TextView = itemView.findViewById(R.id.recycler_title)
+        val reminderTime:TextView = itemView.findViewById(R.id.recycler_time)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReminderDataVH {
         val viewHolder = ReminderDataVH(
             LayoutInflater.from(parent.context)
-            .inflate(R.layout.adapter_list,parent,false))
+            .inflate(R.layout.recycler_view_adapter,parent,false))
         return viewHolder
     }
 
