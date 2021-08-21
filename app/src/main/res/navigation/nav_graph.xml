@@ -20,6 +20,8 @@
         tools:layout="@layout/fragment_add_reminder" >
         <action
             android:id="@+id/action_addReminderFragment_to_homeFragment3"
-            app:destination="@id/homeFragment3" />
+            app:destination="@id/homeFragment3"
+            app:popUpTo="@id/homeFragment3"
+            app:popUpToInclusive="false" />
     </fragment>
 </navigation>
